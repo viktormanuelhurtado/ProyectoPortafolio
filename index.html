@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Menu encabezado-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Víctor</a>
+            </div>
+            <nav id="nav" class="mostrarOcultarMenu">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()" >Inicio</a></li>
+                    <li><a href="#sobremi"  onclick="seleccionar()">Sobre mi</a></li>
+                    <li><a href="#skills"  onclick="seleccionar()">Skills</a></li>
+                    <li><a href="#curriculum"  onclick="seleccionar()">Curriculum</a></li>
+                    <li><a href="#portafolio"  onclick="seleccionar()">Portafolio</a></li>
+                    <li><a href="#contacto"  onclick="seleccionar()">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive"  onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    <!--Seccion Inicio-->
+    <section id="inicio" class="inicio">
+        <div class="contenedor-banner">
+            <div class="contenedor-img">
+                <img src="img/vic.jpg" alt="">
+            </div>
+            <h1>Víctor Hurtado</h1>
+            <h2>Ingenierio de Software</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!--Seccion sobre mi -->
+    <SEction id="sobremi" class="sobremi">
+        <div class="contenedor-seccion">
+            <h2>Sobre mí</h2>
+            <p><span>Hola, soy Víctor.</span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et eius a magni ipsam labore nobis ipsum sunt quas. Fugit incidunt natus inventore earum sunt sint alias aut sequi mollitia molestiae?</p>
+            
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            07-07-1998
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            55-56-59-59-55
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            victor_hola@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.example.com
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span> 
+                        </li>
+                    </ul>
+                </div>
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intesreses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="intereses">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>Juegos</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-sharp fa-solid fa-headphones"></i>
+                            <span>Musica</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>Viajar</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-person-swimming"></i>
+                            <span>Deporte</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-book"></i>
+                            <span>Libros</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-car"></i>
+                            <span>Autos</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar cv <i class="fa-sharp fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </SEction>
+
+    <!--Seccion Skills-->
+    <section id="skills" class="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!--Technical skill-->
+                <div class="col">
+                    <h3>Technical skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso javascript">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Html & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso htmlcss">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Wordpress</span>
+                        <div class="barra-skill">
+                            <div class="progreso wordpress">
+                                <span>78%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>C/C++</span>
+                        <div class="barra-skill">
+                            <div class="progreso c">
+                                <span>78%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Pyhton</span>
+                        <div class="barra-skill">
+                            <div class="progreso pyhton">
+                                <span>78%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Professional skill-->
+                <div class="col">
+                    <h3>Professional skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso comunicacion">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso equipo">
+                                <span>98%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso creatividad">
+                                <span>78%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso dedicacion">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso proyect">
+                                <span>78%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!--Seccion Curriculum-->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Licenciatura en Ingenieria de Software</h4>
+                        <span class="casa"> Universidad Autonoma de la Ciudad de México</span>
+                        <span class="fecha">2015-2023</span>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci culpa doloremque tempora officiis sapiente dolores quasi voluptate provident nemo, incidunt quod placeat accusantium ex laudantium distinctio quidem architecto voluptatum hic!</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Licenciatura en Ingenieria de Software</h4>
+                        <span class="casa"> Universidad Autonoma de la Ciudad de México</span>
+                        <span class="fecha">2015-2023</span>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci culpa doloremque tempora officiis sapiente dolores quasi voluptate provident nemo, incidunt quod placeat accusantium ex laudantium distinctio quidem architecto voluptatum hic!</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Contabilidad</h4>
+                        <span class="casa">CETIS 7</span>
+                        <span class="fecha">2010-2013</span>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci culpa doloremque tempora officiis sapiente dolores quasi voluptate provident nemo, incidunt quod placeat accusantium ex laudantium distinctio quidem architecto voluptatum hic!</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Gastronomia</h4>
+                        <span class="casa">EDAYO</span>
+                        <span class="fecha">2013-2015</span>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci culpa doloremque tempora officiis sapiente dolores quasi voluptate provident nemo, incidunt quod placeat accusantium ex laudantium distinctio quidem architecto voluptatum hic!</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col derecha">
+                    <h3>Experiencia</h3>
+                    <div class="item der">
+                        <h4>Front end</h4>
+                        <span class="casa">Nombre de compañia</span>
+                        <span class="fecha">2015-2023</span>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci culpa doloremque tempora officiis sapiente dolores quasi voluptate provident nemo, incidunt quod placeat accusantium ex laudantium distinctio quidem architecto voluptatum hic!</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Tester</h4>
+                        <span class="casa">Nombre de compañia</span>
+                        <span class="fecha">2010-2013</span>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci culpa doloremque tempora officiis sapiente dolores quasi voluptate provident nemo, incidunt quod placeat accusantium ex laudantium distinctio quidem architecto voluptatum hic!</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Contabilidad</h4>
+                        <span class="casa">G.A.M</span>
+                        <span class="fecha">2010-2013</span>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci culpa doloremque tempora officiis sapiente dolores quasi voluptate provident nemo, incidunt quod placeat accusantium ex laudantium distinctio quidem architecto voluptatum hic!</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Ayudante de cocina</h4>
+                        <span class="casa">Restaurante</span>
+                        <span class="fecha">2013-2015</span>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci culpa doloremque tempora officiis sapiente dolores quasi voluptate provident nemo, incidunt quod placeat accusantium ex laudantium distinctio quidem architecto voluptatum hic!</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </section>
+
+     <!--Seccion Portafolio-->
+    <section id="portafolio" class="portafolio">
+        <div class="contenido-seccion">
+            <h2>Portafolio</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/portafolioEstudio.png" alt="">
+                    <div class="overlay">
+                        <h3>Portafolio para Estudio de tatuajes</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/portafolioTatuador.png" alt="">
+                    <div class="overlay">
+                        <h3>Portafolio para Tatuador</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/TarjetaDebito.png" alt="">
+                    <div class="overlay">
+                        <h3>Tarjeta de debito</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/TicTacTeo.png" alt="">
+                    <div class="overlay">
+                        <h3>Juego Tic-Tac-Teo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/reconocimientoFaciel.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>Reconocimiento Facial</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/temporadisador.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Tiempo de actividades</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Seccion Contacto-->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>Contacto</h2>
+            <div class="fila">
+                <!--Formulario-->
+                <div class="col">
+                    <input type="text" placeholder="Tu nombre">
+                    <input type="text" placeholder="Número Telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+               <!--Info-->
+               <div class="col">
+                <div class="info">
+                    <ul>
+                        <li>
+                            <i class="fa-brands fa-linkedin"></i>
+                            linkedin: Víctor Manuel Huratdo Segura
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone-volume"></i>
+                            Lamanos: 55-46-08-48-60
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            Email: tacoLoco@ejemplo.com
+                        </li>
+                    </ul>
+                </div>
+               </div> 
+            </div>
+        </div>
+    </section>
+
+    <!--Seccion Footer-->
+    <footer>
+            <a href="#inicio" class="arriba">
+                <i class="fa-solid fa-angles-up"></i>
+            </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
